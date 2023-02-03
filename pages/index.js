@@ -124,7 +124,7 @@ function Home() {
     return (
         <div> 
             <HeroSection/>
-            
+            <h1>kamal</h1>
         </div>
     )
 }

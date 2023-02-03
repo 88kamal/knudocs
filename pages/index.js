@@ -26,7 +26,7 @@ export default function Home({ post }) {
           <div className="container px-5  mx-auto ">
             <div className="">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-10 text-gray-900 text-center" style={{ color: mode === 'dark' ? 'white' : '' }}>BEST COURSE FOR EVER</h1>
-              {/* <div className="h-1 w-20 bg-indigo-500 rounded mx-24">ok</div> */}
+              <div className="h-1 w-20 bg-indigo-500 rounded mx-24">ok</div>
             </div>
             {/* <div className=''>
 

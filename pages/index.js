@@ -28,7 +28,7 @@ export default function Home({ post }) {
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-10 text-gray-900 text-center" style={{ color: mode === 'dark' ? 'white' : '' }}>BEST COURSE FOR EVER</h1>
               {/* <div className="h-1 w-20 bg-indigo-500 rounded mx-24">ok</div> */}
             </div>
-            <div className=''>
+            {/* <div className=''>
 
              {searchkey ? (<h1 className=' text-center text-3xl'>Not Found</h1>)
              :
@@ -58,7 +58,7 @@ export default function Home({ post }) {
                 //   )
                 // })
               }
-            </div>
+            </div> */}
 
             {/* <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="searchkey"
               id="searchkey"

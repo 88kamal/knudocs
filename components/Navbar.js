@@ -26,7 +26,7 @@ function Navbar() {
                                 {/* <h2 className="text-2xl font-bold " style={{
                                     color: mode === 'dark' ? '   #61DAFB' : '#6366F1'
                                 }}>KnuDocs</h2> */}
-                                <img className=' w-[2.9em]  rounded-lg' src='img/logo1.png'/>
+                                <img className=' w-[2.9em]  rounded-lg' src='img/logo1.png' alt='logo'/>
                             </Link>
                             <div className="md:hidden">
                                 <button

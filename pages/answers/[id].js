@@ -4,6 +4,7 @@ import userContext from '../../context/user/userContext'
 import baseUrl from '../../database/baseUrl'
 import { Dialog, Transition } from '@headlessui/react'
 import { DefaultEditor } from 'react-simple-wysiwyg';
+import Link from 'next/link'
 
 
 
@@ -13,12 +14,17 @@ function Answer(getOneAnswer) {
     let [isOpen, setIsOpen] = useState(false)
     const router = useRouter()
     const context = useContext(userContext)
-    const { mode, user } = context
+    const { mode, user, token } = context
     // console.log(getOneAnswer.getOneAnswer.answer._id)
     const [title, setTitle] = useState('')
     const [mediaUrl, setmediaUrl] = useState('')
     const [description, setDescription] = useState('')
     // const [users, setUsers] = useState([]) 
+
+
+
+    console.log(user)
+
 
 
 
@@ -116,20 +122,36 @@ function Answer(getOneAnswer) {
                                                 {/* <p className="text-base" style={{ color: mode === 'dark' ? 'white' : '' }}>Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p> */}
                                                 <div className=' my-5'>
 
-                                                    {(user.role == 'admin' || user.role == 'root') && <div>
+                                                    {(user.role == 'admin' || user.role == 'root' || user.role == 'subdmin') && 
+                                                    <div>
+
+                                                        {/* {(user.name) && 
+                                                        <> */}
                                                         <button onClick={openModal} type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br  shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Update</button>
                                                         <button onClick={deleteOneAnswer} type="button" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Delete</button>
-
-                                                    </div>}
+                                                        {/* </> */}
+                                                        {/* // } */}
+                                                    </div>
+                                                    }
 
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0  sm:text-left">
-                                            <div>
-                                                <h1 className=' text-3xl font-extrabold' style={{ color: mode === 'dark' ? 'white' : '' }}>{getOneAnswer[item].answer.title}</h1>
+                                            <div className=" flex">
+                                                <div className="w-10 h-10 inline-flex items-center justify-center rounded-full  mb-4">
+                                                    <img className=' rounded-full' src={getOneAnswer[item].answer.logo} alt="reactjs" />
+                                                </div>
+                                                <div>
+                                                    <h1 className=' text-3xl font-extrabold mx-5' style={{ color: mode === 'dark' ? 'white' : '' }}>{getOneAnswer[item].answer.title}</h1>
+                                                </div>
                                             </div>
-                                            <div className="leading-relaxed text-lg md:my-5 p-4  " style={{ backgroundColor: mode === 'dark' ? '' : '', color: mode === 'dark' ? 'white' : '', backdropFilter: '50000px' }}>{<div dangerouslySetInnerHTML={createMarkup(getOneAnswer[item].answer.description)}></div>}</div>
+
+                                            <div className="leading-relaxed text-lg md:my-5 p-4  " style={{ backgroundColor: mode === 'dark' ? '' : '', color: mode === 'dark' ? 'white' : '', backdropFilter: '50000px' }}>{(getOneAnswer[item].answer.description)}</div>
+                                            <Link
+                                                href={getOneAnswer[item].answer.link}>
+                                                <button className='text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mx-5' >click</button>
+                                            </Link>
 
                                         </div>
                                     </div>

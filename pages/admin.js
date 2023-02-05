@@ -86,9 +86,9 @@ function Admin() {
         // </div>
         <div>
 
-            <div className="overflow-x-auto my-20  mb-[26em] " >
+            <div className="overflow-x-auto my-20  mb-[30em] " >
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 my-5 font-medium text-gray-900 text-center " style={{ color: mode === 'dark' ? 'white' : '' }}><span >
-                    <span className=' font-bold text-purple-800  text-4xl ' style={{ color: mode === 'dark' ? '#6366F1' : '', fontWeight: mode === 'dark' ? 'bold' : '' }}>WebKnu</span> User's </span>
+                    <span className=' font-bold text-purple-800  text-4xl ' style={{ color: mode === 'dark' ? '#6366F1' : '', fontWeight: mode === 'dark' ? 'bold' : '' }}>KnuDocs</span> User's </span>
                 </h1>
                 <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 container mx-auto " >
                     <thead className="  text-xs text-gray-700 uppercase bg-gray-500 dark:bg-gray-700 dark:text-gray-400" style={{ backgroundColor: mode === 'dark' ? 'rgb(31, 41, 55)' : '', color: mode === 'dark' ? 'white' : '', backdropFilter: '50000px' }}>
@@ -114,20 +114,20 @@ function Admin() {
                         {users.map((item, key) => {
                             return (
                                 <tr className=" bg-[#d2dae2] border-b  border-[white] " style={{ backgroundColor: mode === 'dark' ? 'rgb(147 147 147 / 27%)' : '', color: mode === 'dark' ? 'white' : '', backdropFilter: '50000px' }}>
-                                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" style={{ color: mode === 'dark' ? 'white' : 'black' }}>
                                         {key + 1}
                                     </th>
                                     <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" style={{ color: mode === 'dark' ? 'white' : '' }}>
                                         <img className='w-10 h-10 rounded-full' src={item.image} alt="" />
 
                                     </th>
-                                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                    <th scope="row" className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white" style={{ color: mode === 'dark' ? 'white' : 'black' }}>
                                         {item.name}
                                     </th>
                                     <td className="py-4 px-6 text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>
                                         {item.email}
                                     </td>
-                                    <td onClick={() => handleRole(item._id, item.role)} className="py-4 px-6 text-gray-900" style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                    <td onClick={() => handleRole(item._id, item.role)} className="py-4 px-6 text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '' }}>
                                         {item.role}
                                     </td>
 

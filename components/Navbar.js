@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useContext, useState } from 'react'
 import userContext from '../context/user/userContext';
-import { MdDarkMode } from 'react-icons/md'
+import { MdDarkMode, MdOutlineLightMode, MdLightMode } from 'react-icons/md'
 import { ImSearch } from 'react-icons/im'
 import Cookies from 'js-cookie';
 function Navbar() {
@@ -18,13 +18,15 @@ function Navbar() {
     return (
         <div>
 
-            <nav className=" w-full z-50 shadow-lg fixed  top-0 bg-gray-200 " style={{ backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : '', }} >
+            <nav className=" w-full z-50 shadow-2xl fixed  top-0 bg-gray-200 " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }} >
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 ">
                     <div>
-                        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                        <div className="flex items-center justify-between py-3 md:py-[10px] md:block">
                             <Link href={'/'} >
-                                {/* <h2 className="text-2xl font-bold text-[#6366F1]">Hunting CoDeR</h2> */}
-                                <img className=' w-40 rounded-lg' src='img/logo.png'/>
+                                {/* <h2 className="text-2xl font-bold " style={{
+                                    color: mode === 'dark' ? '   #61DAFB' : '#6366F1'
+                                }}>KnuDocs</h2> */}
+                                <img className=' w-[2.9em]  rounded-lg' src='img/logo1.png'/>
                             </Link>
                             <div className="md:hidden">
                                 <button
@@ -92,9 +94,12 @@ function Navbar() {
 
 
                                 <li className="text-gray-900 hover:text-[#6366F1] order-last ">
-                                    <button className='' style={{
+                                    <button className='hover:text-[#6366F1]' style={{
                                         marginTop: '6px'
-                                    }} onClick={toggleMode}><MdDarkMode size={35} style={{ color: mode === 'dark' ? 'white' : '' }} /></button>
+                                    }} onClick={toggleMode}>
+
+                                        {mode === 'dark' ? <MdDarkMode size={35} style={{ color: mode === 'dark' ? 'white' : '' }} /> : <MdLightMode size={35} style={{ color: mode === 'dark' ? 'white' : '' }} />}
+                                    </button>
 
                                 </li>
                                 <li className="text-gray-900 hover:text-[#6366F1]">
@@ -148,21 +153,20 @@ function Navbar() {
                                  <div>   <button className=' text-[#6366F1] mb-10' onClick={input}><ImSearch size={20}/></button></div>
                                 </li> */}
 
-                                        <li className="  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+                                        <button className="  text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
                                             <a onClick={logout} className=' cursor-pointer' >Logout</a>
-                                        </li>
+                                        </button>
                                         <li className="text-gray-900 hover:text-[#6366F1]">
                                             <Link href={'/account'}>
                                                 <img class="w-10 h-10 rounded-full" src={user.image} alt="Jese Leos" />
-
                                             </Link>
                                         </li>
                                     </>
                                     :
-                                    <>  <li className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">
+                                    <>  <li className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">
                                         <Link href={'/login'} >Login</Link>
                                     </li>
-                                        <li className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center  ">
+                                        <li className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
                                             <Link href={'/signup'} >Create Account</Link>
                                         </li>
                                     </>}

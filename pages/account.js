@@ -70,20 +70,17 @@ function Account() {
                         sm:inline-block " style={{ backgroundColor: mode === 'dark' ? '#6366F1' : '' }}>Follow</a>
             </div>
             {/* post, following, followers list for medium screens */}
-            {/* <ul className="hidden md:flex space-x-8 mb-4">
+            <ul className="hidden md:flex space-x-8 mb-4">
               <li style={{ color: mode === 'dark' ? 'white' : '' }}>
-                <span className="font-semibold" >136</span>
-                posts
+                {user.email}
               </li>
               <li style={{ color: mode === 'dark' ? 'white' : '' }}>
-                <span className="font-semibold" >40.5k</span>
-                followers
+                {user.designation}
               </li>
               <li style={{ color: mode === 'dark' ? 'white' : '' }}>
-                <span className="font-semibold" >302</span>
-                following
+                {user.role}
               </li>
-            </ul> */}
+            </ul>
             {/* user meta form medium screens */}
             {/* <div className="hidden md:block" style={{ color: mode === 'dark' ? 'white' : '' }}>
               <h1 className="font-semibold" style={{ color: mode === 'dark' ? 'white' : '' }}>Mr Kamal...</h1>

@@ -22,7 +22,7 @@ const fetchUsers = Authenticated(async (req, res) => {
 
 const ChangeRole = Authenticated(async (req, res) => {
     const { _id, role } = req.body
-    const newRole = role == "user" ? "admin" : "user"
+    const newRole = role == "user" ? "admin" :  "user"
     const users = await User.findOneAndUpdate(
         { _id },
         { role: newRole },

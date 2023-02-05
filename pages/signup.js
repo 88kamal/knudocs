@@ -25,50 +25,50 @@
 //           <div className="mb-3"></div>
 // <div>
 //   <label for="name" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Enter Your Full Name</label>
-//   <input type="text" name="name" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-//     backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+//   <input type="text" name="name" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+//     backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : ''
 //   }} />
 // </div>
 // <div>
 //   <label for="desig" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Enter Your Designation</label>
-//   <input type="text" name="email" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-//     backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+//   <input type="text" name="email" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+//     backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : ''
 //   }} />
 // </div>
 // <div>
 //   {/* <label for="email" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your email</label>
-//   <input type="email" name="email"  className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required="" /> */}
+//   <input type="email" name="email"  className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" placeholder="name@company.com" required="" /> */}
 
 //   <label className="block mb-2  font-medium text-gray-900 dark:text-gray-300" for="large_size" style={{ color: mode === 'dark' ? 'white' : '' }}>Large file input</label>
-//   <input className="block w-full text-lg text-gray-900 bg-gray-50 rounded-md border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="large_size" type="file" onChange={(e) => setImage(e.target.files[0])} style={{
-//     backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+//   <input className="block w-full text-lg text-gray-900 bg-gray-100 rounded-md border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="large_size" type="file" onChange={(e) => setImage(e.target.files[0])} style={{
+//     backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : ''
 //   }} />
 
 // </div>
 // <div>
 //   <label for="email" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your email</label>
-//   <input type="email" name="email" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@gmail.com" required="" style={{
-//     backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+//   <input type="email" name="email" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" placeholder="name@gmail.com" required="" style={{
+//     backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : ''
 //   }} />
 // </div>
 // <div>
 //   <label for="password" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your password</label>
-//   <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-//     backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+//   <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+//     backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : ''
 //   }} />
 // </div>
 //           {/* <div className="flex items-start">
 //             <div className="flex items-start">
 //               <div className="flex items-center h-5">
-//                 <input id="remember" type="checkbox" value="" className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="" />
+//                 <input id="remember" type="checkbox" value="" className="w-4 h-4 bg-gray-100 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="" />
 //               </div>
 //               <label for="remember" className="ml-2  font-medium text-gray-900 dark:text-gray-300">Remember me</label>
 //             </div>
-//             <a href="#" className="ml-auto  text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+//             <a href="#" className="ml-auto  text-blue-700 hover:underline dark:text-blue-1000">Lost Password?</a>
 //           </div> */}
 //           <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SignUp</button>
-//           <div className=" font-medium text-gray-500 dark:text-gray-300">
-//             You registered? <a href="#" className="text-blue-700 hover:underline dark:text-blue-500" style={{ color: mode === 'dark' ? 'white' : '' }}>Login Now</a>
+//           <div className=" font-medium text-gray-1000 dark:text-gray-300">
+//             You registered? <a href="#" className="text-blue-700 hover:underline dark:text-blue-1000" style={{ color: mode === 'dark' ? 'white' : '' }}>Login Now</a>
 //           </div>
 //         </form>
 //       </div >
@@ -123,7 +123,7 @@ function Signup() {
       console.log(res2.error)
       toast.error(res2.error, {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 10000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -136,7 +136,7 @@ function Signup() {
       // console.log(res2)
       toast.success(res2, {
         position: "top-right",
-        autoClose: 5000,
+        autoClose: 10000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -171,57 +171,66 @@ function Signup() {
   return (
     <div className=' flex justify-center'>
 
-      <div className="p-4  my-24 w-[90%] max-w-sm bg-white rounded-lg border border-gray-200 shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(31 41 55)' : '', color: mode === 'dark' ? 'white' : '' }}>
-        <form className="space-y-6" onSubmit={userSignup}>
+      <div className="p-4  my-32 w-[90%] max-w-sm bg-gray-200 border-2 rounded-lg  border-gray-200 shadow-lg sm:p-6 md:p-8 " style={{ backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : '' }}>
+        <form className="space-y-4" onSubmit={userSignup}>
           <img className=" w-20 container mx-auto  shadow-md" style={{
             borderRadius: '71px'
           }} src={image ? URL.createObjectURL(image) : ""} alt="" />
 
           {/* <h5 className="text-xl font-medium text-gray-900 dark:text-white" style={{ color: mode === 'dark' ? 'white' : '' }}>Sign Up to our platform</h5> */}
           <div>
-            <label for="name" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Enter Your Full Name</label>
-            <input type="text" name="name" value={name} className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-              backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+            <label for="name" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Enter Your Full Name</label>
+            <input type="text" name="name" value={name} className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
             }} onChange={(e) => setName(e.target.value)} />
           </div>
           <div>
-            <label for="desig" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Enter Your Designation</label>
-            <input type="text" name="email" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-              backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+            <label for="desig" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Enter Your Designation</label>
+            <input type="text" name="email" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
             }} value={designation} onChange={(e) => setDesignation(e.target.value)} />
           </div>
           <div>
-            <label className="block mb-2  font-medium text-gray-900 dark:text-gray-300" for="large_size" style={{ color: mode === 'dark' ? 'white' : '' }}>Please Upload own pic</label>
-            <input className="block w-full text-lg text-gray-900 bg-gray-50 rounded-md border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="large_size" type="file" onChange={(e) => setImage(e.target.files[0])} style={{
-              backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+            <label className="block mb-2  font-medium text-gray-900 dark:text-gray-300" for="large_size" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Please Upload own pic</label>
+            <input className="block w-full text-lg text-gray-900 bg-gray-100 rounded-md border border-gray-300 cursor-pointer " id="large_size" type="file" onChange={(e) => setImage(e.target.files[0])} style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
             }} />
 
           </div>
           <div>
-            <label for="email" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your email</label>
-            <input type="email" name="email" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@gmail.com" required="" style={{
-              backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+            <label for="email" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your email</label>
+            <input type="email" name="email" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" placeholder="name@gmail.com" required="" style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
             }} value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
-            <label for="password" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your password</label>
-            <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" style={{
-              backgroundColor: mode === 'dark' ? 'rgb(0 20 38)' : '', color: mode === 'dark' ? 'white' : ''
+            <label for="password" className="block mb-2  font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your password</label>
+            <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-100 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-1000 focus:border-blue-1000 block w-full p-1.5  dark:text-white" required="" style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
             }} value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           {/* <div className="flex items-start">
             <div className="flex items-start">
               <div className="flex items-center h-5">
-                <input id="remember" type="checkbox" value="" className="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="" />
+                <input id="remember" type="checkbox" value="" className="w-4 h-4 bg-gray-100 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="" />
               </div>
               <label for="remember" className="ml-2  font-medium text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
-            <a href="#" className="ml-auto  text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+            <a href="#" className="ml-auto  text-blue-700 hover:underline dark:text-blue-1000">Lost Password?</a>
           </div> */}
-          <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">SignUp</button>
+          <button
+            style={{
+              color: mode === 'dark' ? 'black' : '',
+              backgroundColor: mode === 'dark' ? 'rgb(97, 218, 251)' : 'black'
+            }}
+            type="submit" className=" w-full text-white   hover:bg-gradient-to-br focus:ring-4 focus:outline-none  shadow-green-1000/100 dark:shadow-lg  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">SignUp</button>
           <ToastContainer />
-          <div className=" font-medium text-gray-500 dark:text-gray-300">
-            You registered? <Link href={'/login'} className="text-blue-700 hover:underline dark:text-blue-500" style={{ color: mode === 'dark' ? 'white' : '' }}>Login Now</Link>
+          <div
+            className=" font-medium text-gray-1000 dark:text-gray-300"
+            style={{
+              color: mode === 'dark' ? 'white' : 'black'
+            }}>
+            You registered? <Link href={'/login'} className="text-blue-700 hover:underline dark:text-blue-1000" style={{ color: mode === 'dark' ? 'green' : '' }}>Login Now</Link>
           </div>
         </form>
       </div>

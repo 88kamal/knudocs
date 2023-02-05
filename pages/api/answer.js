@@ -66,11 +66,11 @@ const getAnswer = async (req, res) => {
 
 const saveAnswer = async (req, res) => {
 
-    const { title, mediaUrl, description,name, designation } = req.body
+    const { title, mediaUrl, description,name, designation, logo,link } = req.body
     // const { newUser } = req.signup
 
 
-    if (!title || !mediaUrl || !description || !name || !designation) {
+    if (!title || !mediaUrl || !description || !name || !designation || !link || !logo) {
         return res.status(422).json({ error: "Please All Fields " })
     }
 
@@ -83,7 +83,9 @@ const saveAnswer = async (req, res) => {
             mediaUrl,
             description,
             name, 
-            designation
+            designation,
+            logo,
+            link
         })
         await post.save()
         res.status(200).json({ message: "Post Add Successfully" })

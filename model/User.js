@@ -26,7 +26,7 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         default: "user",
-        enum: ["user", 'admin', 'root']
+        enum: ["user", 'admin', 'root', 'subdmin']
     }
     
 });

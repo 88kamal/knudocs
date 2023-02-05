@@ -40,14 +40,20 @@
 // export default HerSection
 
 
-import React from 'react'
+import Link from 'next/link'
+import React, { useContext } from 'react'
+import userContext from '../context/user/userContext'
 
 function HeroSection() {
     // https://networkencyclopedia.com/wp-content/uploads/2019/08/hacking-1024x512.jpeg
+    // https://c4.wallpaperflare.com/wallpaper/374/392/867/anarchy-computer-cyber-dark-wallpaper-preview.jpg
+    // https://wallpaperaccess.com/full/3909258.jpg
+    const context = useContext(userContext)
+    const {mode } = context
   return (
-    <div className=' my-20'>
+    <div className=' my-[4.1em]'>
         {/* Component Code */}
-        <div className="relative  h-[35em] w-full flex items-center justify-center text-center bg-contain bg-center" style={{backgroundImage: 'url(https://c4.wallpaperflare.com/wallpaper/374/392/867/anarchy-computer-cyber-dark-wallpaper-preview.jpg)'}}>
+        <div className="relative  h-[35em] w-full flex items-center justify-center text-center bg-contain bg-center" style={{backgroundImage: mode == 'dark' ? 'url(https://wallpaperaccess.com/full/3909258.jpg)' :'url(https://c4.wallpaperflare.com/wallpaper/111/745/193/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg)', backgroundRepeat:"no-repeat", backgroundSize:' cover'}}>
           <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75" />
           <main className="px-4 sm:px-6 lg:px-8 z-10">
             <div className="text-center">
@@ -59,9 +65,9 @@ function HeroSection() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex justify-center">
                 <div className="rounded-md shadow">
-                  <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg leading-6 font-regular  text-black bg-[#61DAFB] hover:bg-[white]  focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:px-10">
+                  <Link href={'/document'} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg leading-6 font-regular  text-black bg-[#61DAFB] hover:bg-[white]  focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:px-10">
                     Get started
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-lg leading-6 font-regular  text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:px-10">

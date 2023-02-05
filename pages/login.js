@@ -61,16 +61,20 @@ function Login() {
   return (
     <div className=' flex justify-center mb-[11em]'>
 
-      <div className="p-4  my-24 w-[90%] max-w-sm bg-white rounded-lg border border-gray-200 shadow-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700" style={{ backgroundColor: mode === 'dark' ? 'rgb(31 41 55)' : '', color: mode === 'dark' ? 'white' : '' }}>
-        <form onSubmit={userlogin} className="space-y-6" >
-          <h5 className="text-xl text-center font-medium text-gray-900 dark:text-white" style={{ color: mode === 'dark' ? 'white' : '' }}>Sign In to our platform</h5>
+      <div className="p-4  my-52 w-[90%] max-w-sm bg-gray-300 rounded-lg border border-gray-400 shadow-lg sm:p-6 md:p-8 " style={{ backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black' }}>
+        <form onSubmit={userlogin} className=" space-y-4" >
+          <h5 className="text-xl text-center font-medium text-gray-900 dark:text-white" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Sign In to our platform</h5>
           <div>
-            <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your email</label>
-            <input type="email" name="email" value={email} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required="" onChange={(e) => setEmail(e.target.value)} />
+            {/* <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your email</label> */}
+            <input type="email" name="email" value={email} className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:text-white" placeholder="name@company.com" required="" onChange={(e) => setEmail(e.target.value)} style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
+            }} />
           </div>
           <div>
-            <label for="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : '' }}>Your password</label>
-            <input type="password" name="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="" value={password} onChange={(e) => setPassword(e.target.value)} />
+            {/* <label for="password" className="block mb-2  text-sm font-medium text-gray-900 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>Your password</label> */}
+            <input type="password" name="password" placeholder="••••••••" className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " required="" value={password} onChange={(e) => setPassword(e.target.value)} style={{
+              backgroundColor: mode === 'dark' ? '#20232a' : '', color: mode === 'dark' ? 'white' : 'black'
+            }} />
           </div>
           {/* <div className="flex items-start">
             <div className="flex items-start">
@@ -81,10 +85,10 @@ function Login() {
             </div>
             <a href="#" className="ml-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
           </div> */}
-          <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
-          <ToastContainer/>
-          <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-            Not registered? <Link href={'/signup'} className="text-blue-700 hover:underline dark:text-blue-500" style={{ color: mode === 'dark' ? 'white' : '' }}>Create Account</Link>
+          <button type="submit" className="w-full my-5 text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Login to your account</button>
+          <ToastContainer />
+          <div className="text-sm font-medium text-gray-500 dark:text-gray-300" style={{ color: mode === 'dark' ? 'white' : 'black' }}>
+            Not registered? <Link href={'/signup'} className="text-blue-700 hover:underline dark:text-blue-500" style={{ color: mode === 'dark' ? 'green' : '' }}>Create Account</Link>
           </div>
         </form>
       </div>

@@ -40,6 +40,8 @@ const UserState = (props) => {
     router.push('/login')
   }
 
+  const token = Cookies.get('token');
+  console.log(token);
   const [useUser, setUseUser] = useState('')
 
   useEffect(() => {
@@ -53,7 +55,7 @@ const UserState = (props) => {
 
 
   return (
-    <UserContext.Provider value={{ toggleMode, mode, setSearchkey, searchkey, user, logout, setUser, user, users, setUsers, useUser, setUseUser }}>
+    <UserContext.Provider value={{ toggleMode, mode, setSearchkey, searchkey, user, logout, setUser, user, users, setUsers, useUser, setUseUser , token }}>
       {props.children}
     </UserContext.Provider>
   )

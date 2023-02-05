@@ -89,7 +89,7 @@ export default function Home({ post }) {
             {/* handbook banner  */}
 
             <section className="text-gray-600 body-font">
-              <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
+              <div className="container mx-auto flex px-5 py-20  md:py-10 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                   <img className="object-cover object-center rounded -mt-20 md:-mt-0 hover:shadow-2xl hover:shadow-[#6366F1] cursor-pointer" alt="hero" src={mode === 'dark' ? 'img/darkhand.png' : 'img/lighthand.png'} />
                 </div>

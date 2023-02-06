@@ -74,9 +74,6 @@ const saveAnswer = async (req, res) => {
         return res.status(422).json({ error: "Please All Fields " })
     }
 
-
-
-
     try {
         const post = await new Post({
             title,

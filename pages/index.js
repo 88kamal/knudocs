@@ -7,6 +7,9 @@ import PremiumUser from '../components/PremiumUser'
 import userContext from '../context/user/userContext'
 import baseUrl from '../database/baseUrl'
 import styles from '../styles/Home.module.css'
+import apidata from '../apidata/apidata';
+import Create from '../components/Create'
+import Prouser from '../components/pro_user/Prouser'
 
 export default function Home({ post }) {
   const context = useContext(userContext)
@@ -22,7 +25,7 @@ export default function Home({ post }) {
 
   // useEffect(() => {
   //  setInterval(() => {
-    // clearTimeout(myTimeout)
+  // clearTimeout(myTimeout)
   //  }, 5000);
   // }, [myTimeout]);
   return (
@@ -35,7 +38,7 @@ export default function Home({ post }) {
       </Head>
 
       <main className=' mt-[-2em]    '  >
-        
+
         <section className="text-gray-600 body-font " >
           <div className="container px-5  mx-auto ">
             <div className="">
@@ -75,7 +78,7 @@ export default function Home({ post }) {
                   }}>Best Docs For
                     Beginner
                   </h1>
-                  <p className="mb-8 leading-relaxed" style={{
+                  <p className="mb-8 leading-relaxed font-light" style={{
                     color: mode === 'dark' ? 'white' : ''
                   }}>Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
 
@@ -89,7 +92,7 @@ export default function Home({ post }) {
             {/* handbook banner  */}
 
             <section className="text-gray-600 body-font">
-              <div className="container mx-auto flex px-5 py-20  md:py-10 md:flex-row flex-col items-center">
+              <div className="container mx-auto flex px-5 py-10  md:py-10 md:flex-row flex-col items-center">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                   <img className="object-cover object-center rounded -mt-20 md:-mt-0 hover:shadow-2xl hover:shadow-[#6366F1] cursor-pointer" alt="hero" src={mode === 'dark' ? 'img/darkhand.png' : 'img/lighthand.png'} />
                 </div>
@@ -99,15 +102,31 @@ export default function Home({ post }) {
                   }}>Best handbook For
                     Beginner
                   </h1>
-                  <p className="mb-8 leading-relaxed" style={{
+                  <p className="mb-8 leading-relaxed font-light" style={{
                     color: mode === 'dark' ? 'white' : ''
                   }}>Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                 </div>
               </div>
             </section>
+
+            <Create />
             {/* plane for primium  */}
 
-            <PremiumUser />
+            
+            {/* prouser  */}
+
+            {/* <Prouser/> */}
+<PremiumUser />
+            {/* {apidata.map((item, index) => {
+              return (
+                <div>
+                  {item.title}
+                </div>
+              )
+            })} */}
+
+
+
 
           </div>
 

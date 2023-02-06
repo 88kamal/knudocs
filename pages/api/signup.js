@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         if (!name || !designation || !image || !email || !password) {
             return res.status(422).json({ error: 'Please Fill All Field' })
         }
-        const user = await User.findOne({ email })
+        const user = await User.findOne({email})
 
         if (user) {
             return res.status(422).json({ error: 'User Already Exist' })

@@ -26,12 +26,24 @@ function Navbar() {
                                 {/* <h2 className="text-2xl font-bold " style={{
                                     color: mode === 'dark' ? '   #61DAFB' : '#6366F1'
                                 }}>KnuDocs</h2> */}
-                                <img className=' w-[2.9em]  rounded-lg' src='img/logo1.png' alt='logo'/>
+                                <>
+                                    {
+                                        user.role === 'admin' ?
+                                            (<img className=' w-[3.2em]  rounded-lg' src='img/adminlogo.png' alt='logo' />) :
+                                            user.role === 'user' ?
+                                                (<img className=' w-[3.2em]  rounded-lg' src='img/userlogo.png' alt='logo' />) :
+                                                (<img className=' w-[2.9em]  rounded-lg' src='img/logo1.png' alt='logo' />)
+                                    }
+                                </>
                             </Link>
                             <div className="md:hidden">
                                 <button
                                     className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-900 focus:border"
                                     onClick={() => setNavbar(!navbar)}
+                                    style={{
+                                        backgroundColor: mode === 'dark'? '#00fff6' : '#001e76',
+                                    
+                                    }}
                                 >
                                     {navbar ? (
                                         <svg
@@ -45,7 +57,7 @@ function Navbar() {
                                                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                                                 clipRule="evenodd"
                                                 className=' text-black'
-                                                style={{ color: mode === 'dark' ? '#6366F1' : '' }}
+                                                style={{ color: mode === 'dark' ? 'black' : 'white' }}
                                             />
                                         </svg>
                                     ) : (
@@ -62,7 +74,7 @@ function Navbar() {
                                                 strokeLinejoin="round"
                                                 d="M4 6h16M4 12h16M4 18h16"
                                                 className=' text-black'
-                                                style={{ color: mode === 'dark' ? '#6366F1' : '' }}
+                                                style={{ color: mode === 'dark' ? 'black' : 'white' }}
 
                                             />
                                         </svg>

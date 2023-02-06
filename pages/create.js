@@ -38,6 +38,7 @@ function create() {
     setDesignation("")
     setLogo(""),
     setLink("")
+    
     const res = await fetch(`${baseUrl}/api/answer`, {
       method: 'POST',
       headers: {

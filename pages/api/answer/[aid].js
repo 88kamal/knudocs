@@ -23,7 +23,6 @@ export default async function handler(req, res) {
     }
 }
 
-
 const getOneAnswer = async (req, res) => {
     const { aid } = req.query
     try {
